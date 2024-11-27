@@ -115,3 +115,30 @@
       filter: hue-rotate(360deg); 
     }
   }
+
+  #grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .center-grid {
+    display: grid;
+    place-items: center;
+  }
+  
+  .box-1 {
+    display: inline-block;
+    animation: rotateCircle 10s linear infinite; 
+    transform-origin: center;
+  }
+  
+  @keyframes rotateCircle {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+  }

@@ -48,3 +48,52 @@
       grid-row: 2;
     }
   }
+
+  aside span {
+    position: fixed;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    bottom: 20px;
+    right: -300px; 
+    background-color: aquamarine; 
+    color: black;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: slideIn 10s ease-in-out infinite, fadeInOut 10s ease-in-out infinite;
+  }
+  
+  
+  @keyframes slideIn {
+    0%, 100% {
+      right: -300px; 
+      opacity: 1; 
+    }
+    10% {
+      right: 20px; 
+      opacity: 1; 
+    }
+    50% {
+      right: 20px; 
+      opacity: 1; 
+    }
+    90% {
+      right: 20px; 
+      opacity: 1; 
+    }
+    100% {
+      right: -300px; 
+      opacity: 1; 
+    }
+  }
+  
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1; 
+    }
+  }
